@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Head-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Coding Quiz</title>
+  </head>
+
+  <!--Body-->
+  <body>
+    <h1 id="title">Coding Quiz</h1>
+
+    <div>
+      <h2 id="desc">
+        Test your basic HTML, CSS and Javascript knowledge in this timed quiz.
+      </h2>
+    </div>
+
+    <div class="rules">
+      <p>
+        Answer 10 questions in 2 minutes. Each wrong answer will
+        deduct 10 seconds from your time. Correct answers will not add
+        additional time. Your score will be tallied when you answer all 10
+        questions or run out of time.
+      </p>
+    </div>
+
+    <div>
+      <button id="begin">Begin Quiz</button>
+    </div>
+
+    <div id="question" style="display: none">
+        <h2></h2>
+    </div>
+
+    <div id="choices" style="display: none">
+        <div id="a">
+            <button></button>
+        </div>
+        <div id="b">
+            <button></button>
+        </div>
+        <div id="c">
+            <button></button>
+        </div>
+        <div id="d">
+            <button></button>
+        </div>
+    </div>
+
+    <div id="timerWords" style="display: none">Time remaining: <span id="timer">2:00</span></div>
+
+    <div id="yourScore"></div>
+
+    <div id="highScore"></div>
+
+    <script src="./assets/js/game.js"></script>
+  </body>
+</html>

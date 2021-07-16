@@ -1,0 +1,47 @@
+/* Body and general styling */
+
+:root {
+    --orange: #ff8c00;
+    --d-green: #166417;
+    --green: #548C2F;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: var(--green);
+    
+}
+
+h2 {
+    text-align: center;
+    color: var(--green);
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+    color: var(--d-green);
+}
+
+button {
+    color: var(--d-green);
+    background-color: var(--orange);
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: var(--green);
+    color: var(--orange);
+    cursor: pointer;
+}
+
+/* Quiz elements */
+
+.rules {
+    width: 50%;
+}
