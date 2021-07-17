@@ -19,12 +19,11 @@
       </h2>
     </div>
 
-    <div class="rules">
+    <div id="rules">
       <p>
-        Answer 10 questions in 2 minutes. Each wrong answer will
-        deduct 10 seconds from your time. Correct answers will not add
-        additional time. Your score will be tallied when you answer all 10
-        questions or run out of time.
+        Answer 10 questions in 2 minutes. Each wrong answer will deduct 10
+        seconds from your time. Correct will not add additional time. Your score
+        will be tallied when you answer all 10 questions or run out of time.
       </p>
     </div>
 
@@ -32,31 +31,26 @@
       <button id="begin">Begin Quiz</button>
     </div>
 
-    <div id="question" style="display: none">
-        <h2></h2>
-    </div>
+    <h2 id="questionWords" style="display: none"></h2>
 
     <div id="choices" style="display: none">
-        <div id="a">
-            <button></button>
-        </div>
-        <div id="b">
-            <button></button>
-        </div>
-        <div id="c">
-            <button></button>
-        </div>
-        <div id="d">
-            <button></button>
-        </div>
+      <button id="a"></button>
+
+      <button id="b"></button>
+
+      <button id="c"></button>
+
+      <button id="d"></button>
     </div>
 
-    <div id="timerWords" style="display: none">Time remaining: <span id="timer">2:00</span></div>
+    <div id="timerWords" style="display: none">
+      Time remaining: <span id="timer">02:00</span>
+    </div>
 
     <div id="yourScore"></div>
 
     <div id="highScore"></div>
 
-    <script src="./assets/js/game.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
