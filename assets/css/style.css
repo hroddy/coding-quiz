@@ -1,47 +1,80 @@
 /* Body and general styling */
 
 :root {
-    --orange: #ff8c00;
-    --d-green: #166417;
-    --green: #548C2F;
+  --orange: #ff8c00;
+  --d-green: #166417;
+  --green: #548c2f;
 }
 
 h1 {
-    text-align: center;
-    font-size: 50px;
-    color: var(--green);
-    
+  text-align: center;
+  font-size: 50px;
+  color: var(--green);
 }
 
 h2 {
-    text-align: center;
-    color: var(--green);
+  text-align: center;
+  color: var(--green);
+  font-size: 30px;
 }
 
 p {
-    text-align: center;
-    font-size: 20px;
-    color: var(--d-green);
+  text-align: center;
+  font-size: 20px;
+  color: var(--d-green);
 }
 
 button {
-    color: var(--d-green);
-    background-color: var(--orange);
-    border: none;
-    padding: 10px 20px;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 10px;
+  color: var(--d-green);
+  background-color: var(--orange);
+  border: none;
+  padding: 10px 20px;
+  margin: 20px 25px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
 }
 
 button:hover {
-    background-color: var(--green);
-    color: var(--orange);
-    cursor: pointer;
+  background-color: var(--green);
+  color: var(--orange);
+  cursor: pointer;
 }
 
-/* Quiz elements */
+#begin {
+    margin: 0 auto;
+    display: block;
+}
 
-.rules {
-    width: 50%;
+#submit {
+    margin: 0 auto;
+    display: block;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 75%;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0px 2px 6px 0px;
+  position: relative;
+}
+
+#choices {
+  line-height: 2;
+}
+
+#timerWords p {
+  color: var(--orange);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#highScore ol li {
+  font-size: 20px;
+  color: var(--d-green);
 }

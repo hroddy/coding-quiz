@@ -13,43 +13,62 @@
   <body>
     <h1 id="title">Coding Quiz</h1>
 
-    <div>
+    <!--start page-->
+    <div class="page">
       <h2 id="desc">
         Test your basic HTML, CSS and Javascript knowledge in this timed quiz.
       </h2>
-    </div>
-
+     
     <div id="rules">
       <p>
         Answer 10 questions in 2 minutes. Each wrong answer will deduct 10
         seconds from your time. Correct will not add additional time. Your score
         will be tallied when you answer all 10 questions or run out of time.
       </p>
+      
+    <div><button id="begin">Begin Quiz</button></div>
     </div>
 
-    <div>
-      <button id="begin">Begin Quiz</button>
+    <!--quiz page-->
+  
+      <h2 id="questionWords" style="display: none"></h2>
+
+      <div id="choices" style="display: none">
+        <button id="a"></button>
+
+        <button id="b"></button>
+
+        <button id="c"></button>
+
+        <button id="d"></button>
+      </div>
+
+      <div id="timerWords" style="display: none">
+      <p>Time remaining: <span id="timer">02:00</span></p>
+      </div>
+  
+
+    <!--end quiz page-->
+  
+    <div id="intialContainer" style="display: none">
+      <label><p>Add your initals and score to the highscore board!</label>
+      <input id="yourInitals" type="text"></input></p>
+      <p id="scoreEl" style="display: none">Final score: <span id="scoreElPush"></span></p>
+      <div><button id="submit">Submit</button></div>
     </div>
 
-    <h2 id="questionWords" style="display: none"></h2>
 
-    <div id="choices" style="display: none">
-      <button id="a"></button>
-
-      <button id="b"></button>
-
-      <button id="c"></button>
-
-      <button id="d"></button>
+    <div id="highScore" style="display: none">
+      <h2>Highscores:</h2>
+      <ol>
+        <li id="highScore1"></li>
+        <li id="highScore2"></li>
+        <li id="highScore3"></li>
+      </ol>
     </div>
 
-    <div id="timerWords" style="display: none">
-      Time remaining: <span id="timer">02:00</span>
-    </div>
-
-    <div id="yourScore"></div>
-
-    <div id="highScore"></div>
+    <button id="backButton" style="display: none">Return to Mainpage</button>
+  </div>
 
     <script src="./assets/js/script.js"></script>
   </body>
