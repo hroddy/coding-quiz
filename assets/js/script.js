@@ -209,7 +209,6 @@ function setPastHighScore() {
   highScoreArray.sort((user1, user2) => user2.score - user1.score);
   highScoreArray = highScoreArray.splice(0, 3);
   localStorage.setItem("submittedHighScore", JSON.stringify(highScoreArray));
-  console.log(highScoreArray);
 }
 
 //event handler for submitting high score initials
